@@ -5,6 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Qiang Li, PhD</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+      max-width: 1100px;
+    }
+
+    .map-card {
+      padding: 28px;
+      background: #f3f6f9;
+      border-radius: 12px;
+      border: 1px solid #dce4ec;
+    }
+
+    .map-card h2 {
+      color: #153a63;
+      margin-top: 0;
+    }
+
+    .map-address {
+      line-height: 1.7;
+      margin: 14px 0 20px;
+    }
+
+    .map-link {
+      display: inline-block;
+      color: #153a63;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -21,29 +61,48 @@
   <main>
     <h1>Contact</h1>
 
-    <section>
-      <h2>Qiang Li, PhD</h2>
+    <div class="contact-layout">
+      <section>
+        <h2>Qiang Li, PhD</h2>
+        <p>
+          Department of Physiology and Biophysics<br>
+          School of Medicine<br>
+          Case Western Reserve University
+        </p>
 
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:qxl465@case.edu">qxl465@case.edu</a>
-      </p>
-<p>
-  <strong>Phone:</strong>
-  <a href="tel:+16173085658">617-308-5658</a>
-</p>
-      <p>
-        <strong>Address:</strong><br>
+        <p>
+          <strong>Email:</strong><br>
+          <a href="mailto:qxl465@case.edu">qxl465@case.edu</a>
+        </p>
+
+        <p>
+          <strong>Phone:</strong><br>
+          <a href="tel:+16173085658">617-308-5658</a>
+        </p>
+
+        <p>
+          <strong>Address:</strong><br>
+          2109 Adelbert Rd, Robbins Building<br>
+          Cleveland, OH 44106
+        </p>
+      </section>
+
+      <aside class="map-card">
+        <h2>Find Us</h2>
+        <p class="map-address">
+          2109 Adelbert Rd, Robbins Building<br>
+          Cleveland, OH 44106
+        </p>
         <a
+          class="map-link"
           href="https://www.google.com/maps/search/?api=1&query=2109+Adelbert+Rd%2C+Robbins+Building%2C+Cleveland%2C+OH+44106"
           target="_blank"
           rel="noopener noreferrer"
         >
-          2109 Adelbert Rd, Robbins Building<br>
-          Cleveland, OH 44106
+          View address on Google Maps ↗
         </a>
-      </p>
-    </section>
+      </aside>
+    </div>
   </main>
 
   <footer>
